@@ -1,9 +1,8 @@
 // Importing react
 import React from "react";
-import { Link } from "react-router-dom";
 
 // Importing mui
-import { Box, Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 
 // Importing Icons
 import ChairOutlinedIcon from "@mui/icons-material/ChairOutlined";
@@ -16,202 +15,58 @@ import TwoWheelerOutlinedIcon from "@mui/icons-material/TwoWheelerOutlined";
 import CabinOutlinedIcon from "@mui/icons-material/CabinOutlined";
 import AodOutlinedIcon from "@mui/icons-material/AodOutlined";
 import AppsOutlinedIcon from "@mui/icons-material/AppsOutlined";
+import OptionButton from "../../Button/OptionButton/OptionButton";
 
 const CategorySection = () => {
  return (
-  <Grid container spacing={2}>
+  <Grid container spacing={2} rowSpacing={6}>
+  
    <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <ChairOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Torget</Typography>
-    </Box>
-   </Grid>
-   <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <MapsHomeWorkOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Eiendom</Typography>
-    </Box>
-   </Grid>
-   <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <AirportShuttleOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Bil og næring</Typography>
-    </Box>
-   </Grid>
-   <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <BusinessCenterOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Jobb</Typography>
-    </Box>
-   </Grid>
-   <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <AirplaneTicketOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Reise</Typography>
-    </Box>
-   </Grid>
-   <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <SailingOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Båt</Typography>
-    </Box>
+    <OptionButton href={"/torget"} icon={<ChairOutlinedIcon fontSize="large" color="info" />} name={"Torget"} />
    </Grid>
 
    <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <TwoWheelerOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">MC</Typography>
-    </Box>
+    <OptionButton href={"/eiendom"} icon={<MapsHomeWorkOutlinedIcon fontSize="large" color="info" />} name={"Eiendom"} />
    </Grid>
+
    <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <CabinOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Feriehus & hytter</Typography>
-    </Box>
+    <OptionButton href={"/bil-og-næring"} icon={<AirportShuttleOutlinedIcon fontSize="large" color="info" />} name={"Bil og næring"} />
    </Grid>
+
    <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <AodOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Ny/brukt mobil</Typography>
-    </Box>
+    <OptionButton href={"/jobb"} icon={<BusinessCenterOutlinedIcon fontSize="large" color="info" />} name={"Jobb"} />
    </Grid>
+
    <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <AppsOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Bilabonoment</Typography>
-    </Box>
+    <OptionButton href={"/reise"} icon={<AirplaneTicketOutlinedIcon fontSize="large" color="info" />} name={"Reise"} />
    </Grid>
+
    <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <AppsOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Nettbil</Typography>
-    </Box>
+    <OptionButton href={"/båt"} icon={<SailingOutlinedIcon fontSize="large" color="info" />} name={"Båt"} />
    </Grid>
+
    <Grid item xs={2}>
-    <Box
-     component={Link}
-     sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      color: "black",
-      textDecoration: "none",
-     }}
-    >
-     <AppsOutlinedIcon fontSize="large" color="info" />
-     <Typography variant="body2">Mittanbud</Typography>
-    </Box>
+    <OptionButton href={"/mc"} icon={<TwoWheelerOutlinedIcon fontSize="large" color="info" />} name={"MC"} />
+   </Grid>
+
+   <Grid item xs={2}>
+    <OptionButton href={"/feriehus-hytter"} icon={<CabinOutlinedIcon fontSize="large" color="info" />} name={"Feriehus & hytter"} />
+   </Grid>
+
+   <Grid item xs={2}>
+    <OptionButton href={"/nybrukt mobil"} icon={<AodOutlinedIcon fontSize="large" color="info" />} name={"Ny/brukt mobil"} />
+   </Grid>
+
+   <Grid item xs={2}>
+    <OptionButton href={"/bilabonoment"} icon={<AppsOutlinedIcon fontSize="large" color="info" />} name={"Bilabonoment"} />
+   </Grid>
+
+   <Grid item xs={2}>
+    <OptionButton href={"/nettbil"} icon={<AppsOutlinedIcon fontSize="large" color="info" />} name={"Nettbil"} />
+   </Grid>
+
+   <Grid item xs={2}>
+    <OptionButton href={"/mittanbud"} icon={<AppsOutlinedIcon fontSize="large" color="info" />} name={"Mittanbud"} />
    </Grid>
   </Grid>
  );

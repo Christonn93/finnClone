@@ -45,7 +45,9 @@ const RecommendedSection = () => {
       gap: 2,
      }}
     >
-     <Typography variant="h3">Anbefalinger til deg</Typography>
+     <Typography variant="h3" component={"h4"} sx={{ fontStyle: "initial" }}>
+      Anbefalinger til deg
+     </Typography>
 
      <Grid container spacing={5} rowSpacing={4}>
       {items.map((e) => {

@@ -16,7 +16,7 @@ const InputField = () => {
     id="search"
     endAdornment={
      <InputAdornment position="end">
-      <SearchIcon />
+      <SearchIcon fontSize="large"/>
      </InputAdornment>
     }
    />

@@ -2,7 +2,7 @@
 import React from "react";
 
 // Importing MUI
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container} from "@mui/material";
 import InfoCard from "../../Card/InfoCard/InfoCard";
 
 const InfoSection = () => {

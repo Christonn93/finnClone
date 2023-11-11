@@ -1,8 +1,9 @@
 // Importing React
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Importing MUI
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 // Importing Icons
 import MapTwoToneIcon from "@mui/icons-material/MapTwoTone";
@@ -10,15 +11,21 @@ import MapTwoToneIcon from "@mui/icons-material/MapTwoTone";
 const MapButton = () => {
  return (
   <Box
-  component="div"
+   component={Link}
    sx={{
     display: "flex",
+    gap: 2,
+    color: "black",
+    textDecoration: "none",
+    "&:hover": {
+     textDecoration: "underline",
+    },
    }}
   >
-   <IconButton>
-    <MapTwoToneIcon />
-    <Typography variant="button">Kart</Typography>
-   </IconButton>
+   <MapTwoToneIcon />
+   <Typography variant="button" color="black">
+    Kart
+   </Typography>
   </Box>
  );
 };
