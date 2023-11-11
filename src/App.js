@@ -25,7 +25,7 @@ const App = () => {
      <CssBaseline />
      <Routes>
       <Route path="/" element={<Layout />}>
-       <Route path="/home" element={<Home />} />
+       <Route index element={<Home />} />
        <Route path="*" element={<NotFound />} />
       </Route>
      </Routes>

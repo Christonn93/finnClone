@@ -200,11 +200,10 @@ export const themeSettings = (mode) => {
         light: colors.grey[100],
        },
        background: {
-        default: "#e3e3e3",
+        default: "#ffff",
        },
        text: {
-        main: "#000",
-        secondary: "#fff",
+        main: "#000"
        },
        navText: {
         main: "#000",
@@ -259,7 +258,7 @@ export const ColorModeContext = createContext({
 });
 
 export const useMode = () => {
- const [mode, setMode] = useState("dark");
+ const [mode, setMode] = useState("light");
 
  const colorMode = useMemo(
   () => ({
