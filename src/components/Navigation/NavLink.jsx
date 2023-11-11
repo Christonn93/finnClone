@@ -20,7 +20,7 @@ const NavLink = ({ text, icon }) => {
     textDecoration: "none",
     "&:hover": {
      textDecoration: "none",
-     borderBottom: "1px solid blue",
+     borderBottom: "1px solid #0063fb",
     },
    }}
   >

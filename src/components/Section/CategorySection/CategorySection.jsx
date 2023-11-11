@@ -20,53 +20,184 @@ import OptionButton from "../../Button/OptionButton/OptionButton";
 const CategorySection = () => {
  return (
   <Grid container spacing={2} rowSpacing={6}>
-  
    <Grid item xs={2}>
-    <OptionButton href={"/torget"} icon={<ChairOutlinedIcon fontSize="large" color="info" />} name={"Torget"} />
+    <OptionButton
+     href={"/torget"}
+     icon={
+      <ChairOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Torget"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/eiendom"} icon={<MapsHomeWorkOutlinedIcon fontSize="large" color="info" />} name={"Eiendom"} />
+    <OptionButton
+     href={"/eiendom"}
+     icon={
+      <MapsHomeWorkOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Eiendom"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/bil-og-næring"} icon={<AirportShuttleOutlinedIcon fontSize="large" color="info" />} name={"Bil og næring"} />
+    <OptionButton
+     href={"/bil-og-næring"}
+     icon={
+      <AirportShuttleOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Bil og næring"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/jobb"} icon={<BusinessCenterOutlinedIcon fontSize="large" color="info" />} name={"Jobb"} />
+    <OptionButton
+     href={"/jobb"}
+     icon={
+      <BusinessCenterOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Jobb"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/reise"} icon={<AirplaneTicketOutlinedIcon fontSize="large" color="info" />} name={"Reise"} />
+    <OptionButton
+     href={"/reise"}
+     icon={
+      <AirplaneTicketOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Reise"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/båt"} icon={<SailingOutlinedIcon fontSize="large" color="info" />} name={"Båt"} />
+    <OptionButton
+     href={"/båt"}
+     icon={
+      <SailingOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Båt"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/mc"} icon={<TwoWheelerOutlinedIcon fontSize="large" color="info" />} name={"MC"} />
+    <OptionButton
+     href={"/mc"}
+     icon={
+      <TwoWheelerOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"MC"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/feriehus-hytter"} icon={<CabinOutlinedIcon fontSize="large" color="info" />} name={"Feriehus & hytter"} />
+    <OptionButton
+     href={"/feriehus-hytter"}
+     icon={
+      <CabinOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Feriehus & hytter"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/nybrukt mobil"} icon={<AodOutlinedIcon fontSize="large" color="info" />} name={"Ny/brukt mobil"} />
+    <OptionButton
+     href={"/nybrukt mobil"}
+     icon={
+      <AodOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Ny/brukt mobil"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/bilabonoment"} icon={<AppsOutlinedIcon fontSize="large" color="info" />} name={"Bilabonoment"} />
+    <OptionButton
+     href={"/bilabonoment"}
+     icon={
+      <AppsOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Bilabonoment"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/nettbil"} icon={<AppsOutlinedIcon fontSize="large" color="info" />} name={"Nettbil"} />
+    <OptionButton
+     href={"/nettbil"}
+     icon={
+      <AppsOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Nettbil"}
+    />
    </Grid>
 
    <Grid item xs={2}>
-    <OptionButton href={"/mittanbud"} icon={<AppsOutlinedIcon fontSize="large" color="info" />} name={"Mittanbud"} />
+    <OptionButton
+     href={"/mittanbud"}
+     icon={
+      <AppsOutlinedIcon
+       fontSize="large"
+       sx={{
+        color: "#0bbffb",
+       }}
+      />
+     }
+     name={"Mittanbud"}
+    />
    </Grid>
   </Grid>
  );

@@ -1,7 +1,6 @@
 // Importing React
 import { useEffect, useState } from "react";
 import { headers } from "../api/headers";
-require("dotenv").config();
 
 /**
  * Function to call a api to receive data
@@ -20,15 +19,14 @@ const useApi = (endpoint, method, body) => {
  const [isLoading, setIsLoading] = useState(false);
  const [isError, setIsError] = useState(false);
 
- const url = `${process.evn.API_URL}` || "www.example.com";
- const apiKeyFlag = `?key=${process.evn.API_KEY}`;
+ const url = "https://fakestoreapi.com/products?limit=5";
 
  useEffect(() => {
   async function getData() {
    try {
     setIsLoading(true);
     setIsError(false);
-    const fetchedData = await fetch(url + endpoint + apiKeyFlag, {
+    const fetchedData = await fetch(url + endpoint, {
      method: method,
      headers: headers("application/json"),
      body: JSON.stringify(body),

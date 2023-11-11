@@ -8,12 +8,13 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 // Importing base layout
 import Layout from "./layout/Layout";
 
+// Importing Theme
+import { ColorModeContext, useMode } from "../src/style/Theme";
+
 // Importing pages
 import Home from "./routes/Home";
 import NotFound from "./routes/NotFound";
-
-// Importing Theme
-import { ColorModeContext, useMode } from "../src/style/Theme";
+import Item from "./routes/Item";
 
 const App = () => {
  const [theme, colorMode] = useMode();
@@ -26,6 +27,7 @@ const App = () => {
      <Routes>
       <Route path="/" element={<Layout />}>
        <Route index element={<Home />} />
+       <Route path="/item" element={<Item />} />
        <Route path="*" element={<NotFound />} />
       </Route>
      </Routes>

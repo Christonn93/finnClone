@@ -6,6 +6,7 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 
 // Importing components
 import ItemCard from "../../Card/ItemCard/ItemCard";
+import useApi from "../../../hooks/useApi";
 
 const items = [
  {
@@ -35,6 +36,10 @@ const items = [
 ];
 
 const RecommendedSection = () => {
+ const {data, isLoading, isError} = useApi();
+
+ console.log(data);
+
  return (
   <>
    <Box>
@@ -50,10 +55,10 @@ const RecommendedSection = () => {
      </Typography>
 
      <Grid container spacing={5} rowSpacing={4}>
-      {items.map((e) => {
+      {data.map((e) => {
        return (
         <Grid item xs={4} key={e.id}>
-         <ItemCard heading={e.name} image={e.image} location={e.location} />
+         <ItemCard heading={e.title} image={e.image} location={e.location} url={e.id}/>
         </Grid>
        );
       })}
