@@ -16,7 +16,14 @@ const ItemCard = ({ image, location, heading, url }) => {
     },
    }}
   >
-   <Box component={Link} to={"item"}>
+   <Box
+    component={Link}
+    to={"item"}
+    sx={{
+     color: "#000",
+     textDecoration: "none",
+    }}
+   >
     <Card>
      <CardMedia component="img" sx={{ width: "100%", height: "250px" }} image={image} />
     </Card>
